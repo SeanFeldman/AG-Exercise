@@ -20,4 +20,5 @@ Please use your discretion for how much time to spend on this. We’re looking t
 
 Attachments:
 - [canadian_cities.csv](https://github.com/user-attachments/files/25063229/canadian_cities.csv)
+- [event_code_definitions.csv](https://github.com/user-attachments/files/25083280/event_code_definitions.csv)
 - [equipment_events.csv](https://github.com/user-attachments/files/25063212/equipment_events.csv)
