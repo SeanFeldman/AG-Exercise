@@ -1,0 +1,46 @@
+@page "/railcar-trips"
+
+<PageTitle>Railcar Trips</PageTitle>
+
+<h1>Railcar Trips</h1>
+
+<InputFile OnChange="OnFileSelected" accept=".csv" />
+<button class="btn btn-primary" @onclick="UploadFile" disabled="@(!_hasFile || _isUploading)">
+    @(_isUploading ? "Uploading..." : "Upload CSV")
+</button>
+
+@if (!string.IsNullOrWhiteSpace(_statusMessage))
+{
+    <p>@_statusMessage</p>
+}
+
+@if (_trips is not null && _trips.Count > 0)
+{
+    <h2>Processed Trips</h2>
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>Equipment Id</th>
+            <th>Origin City Id</th>
+            <th>Destination City Id</th>
+            <th>Start</th>
+            <th>End</th>
+            <th>Total Hours</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var trip in _trips)
+        {
+            <tr>
+                <td>@trip.EquipmentId</td>
+                <td>@trip.OriginCityId</td>
+                <td>@trip.DestinationCityId</td>
+                @* TODO: sort out how to do it better *@
+                <td>@trip.StartLocal.ToString("u")</td>
+                <td>@trip.EndLocal.ToString("u")</td>
+                <td>@trip.TotalTripHours</td>
+            </tr>
+        }
+        </tbody>
+    </table>
+}

@@ -1,0 +1,12 @@
+<Solution>
+  <Folder Name="/SolutionFiles/">
+    <File Path="data/canadian_cities.csv" />
+    <File Path="data/equipment_events.csv" />
+    <File Path="data/event_code_definitions.csv" />
+    <File Path="README.md" />
+  </Folder>
+  <Project Path="src/Railcar.Client/Railcar.Client.csproj" />
+  <Project Path="src/Railcar.Data/Railcar.Data.csproj" />
+  <Project Path="src/Railcar.Shared/Railcar.Shared.csproj" />
+  <Project Path="src/Railcar/Railcar.csproj" />
+</Solution>

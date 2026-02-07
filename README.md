@@ -22,3 +22,49 @@ Attachments:
 - [canadian_cities.csv](https://github.com/user-attachments/files/25063229/canadian_cities.csv)
 - [event_code_definitions.csv](https://github.com/user-attachments/files/25083280/event_code_definitions.csv)
 - [equipment_events.csv](https://github.com/user-attachments/files/25063212/equipment_events.csv)
+
+# Local Setup
+
+1. ASP.NET [development certificate](https://learn.microsoft.com/en-us/dotnet/core/tools/dotnet-dev-certs) - if not already trusted, run `dotnet dev-certs https --trust` in a terminal and follow the prompts to trust the certificate.
+1. If storing DB connection string using user secrets, run `dotnet user-secrets set "ConnectionStrings:RailcarDb" "Server=localhost,1433;Database=RailcarDb;User Id=sa;Password=<PASSWORD>;TrustServerCertificate=True" --project `.
+
+
+## Database setup
+
+1. Start Docker SQL Server instance
+
+```PowerShell
+docker run -e "ACCEPT_EULA=Y" `
+   -e "SA_PASSWORD=Passw0rd" `
+   -p 1433:1433 `
+   --name ag_exercise `
+   -d mcr.microsoft.com/mssql/server:2025-latest
+```
+
+1. Create database
+
+```PowerShell
+docker exec ag_exercise /opt/mssql-tools18/bin/sqlcmd `
+  -S localhost -U sa -P 'Passw0rd' -C `
+  -Q "IF DB_ID('RailcarDb') IS NULL CREATE DATABASE RailcarDb;"
+```
+
+1. Install EF Core tools
+
+```PowerShell
+dotnet tool install dotnet-ef
+```
+
+1. Create the initial EF Core migration and apply it (need to be in the src/Railcar directory for the relative paths to work correctly)
+
+```PowerShell
+cd ./src/Railcar
+dotnet ef migrations add InitialCreate --project ..\Railcar.Data --startup-project . --context RailcarDbContext
+dotnet ef database update --project ..\Railcar.Data --startup-project . --context RailcarDbContext
+```
+
+The application will apply pending migrations and seed lookup data for cities and event code definitions from the CSV files at startup.
+
+## Data model diagram
+
+![Railcar data model](docs/images/railcar-data-model.png)
