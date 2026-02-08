@@ -26,7 +26,7 @@ Attachments:
 # Local Setup
 
 1. ASP.NET [development certificate](https://learn.microsoft.com/en-us/dotnet/core/tools/dotnet-dev-certs) - if not already trusted, run `dotnet dev-certs https --trust` in a terminal and follow the prompts to trust the certificate.
-1. If storing DB connection string using user secrets, run `dotnet user-secrets set "ConnectionStrings:RailcarDb" "Server=localhost,1433;Database=RailcarDb;User Id=sa;Password=<PASSWORD>;TrustServerCertificate=True" --project `.
+1. If storing DB connection string using user secrets, run `dotnet user-secrets set "ConnectionStrings:RailcarDb" "Server=localhost,1433;Database=RailcarDb;User Id=sa;Password=Passw0rd;TrustServerCertificate=True" --project `.
 
 
 ## Database setup
@@ -49,10 +49,10 @@ docker exec ag_exercise /opt/mssql-tools18/bin/sqlcmd `
   -Q "IF DB_ID('RailcarDb') IS NULL CREATE DATABASE RailcarDb;"
 ```
 
-1. Install EF Core tools
+1. Restore EF Core tools
 
 ```PowerShell
-dotnet tool install dotnet-ef
+dotnet tool restore
 ```
 
 ## Data model diagram
