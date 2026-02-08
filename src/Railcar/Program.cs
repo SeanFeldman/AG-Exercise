@@ -10,6 +10,11 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorComponents()
     .AddInteractiveWebAssemblyComponents();
 
+if (builder.Environment.IsDevelopment())
+{
+    builder.Configuration.AddUserSecrets<Program>();
+}
+
 var connectionString = builder.Configuration.GetConnectionString("RailcarDb")
                       ?? throw new InvalidOperationException("Connection string 'RailcarDb' not found.");
 

@@ -14,6 +14,12 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" PrivateAssets="all" IncludeAssets="runtime; build; native; contentfiles; analyzers; buildtransitive" />
+  </ItemGroup>
+
+  <ItemGroup Label="TODO: for this solution this will do but for something more substantial, script it">
+    <None Include="..\..\data\canadian_cities.csv" Link="canadian_cities.csv" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="..\..\data\event_code_definitions.csv" Link="event_code_definitions.csv" CopyToOutputDirectory="PreserveNewest" />
   </ItemGroup>
 
 </Project>

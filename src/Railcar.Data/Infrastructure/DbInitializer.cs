@@ -1,14 +1,12 @@
 using System.Globalization;
 using CsvHelper;
 using CsvHelper.Configuration;
-using JetBrains.Annotations;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Railcar.Data.Entities;
 
 namespace Railcar.Data.Infrastructure;
 
-// Applies EF migrations and seeds lookup data from CSV files at startup.
 public static class DbInitializer
 {
     public static async Task InitializeAsync(IServiceProvider services, CancellationToken cancellationToken = default)
@@ -44,6 +42,8 @@ public static class DbInitializer
 
         using var reader = new StreamReader(csvPath);
         using var csv = new CsvReader(reader, config);
+
+        csv.Context.RegisterClassMap<CityCsvMap>();
 
         var records = new List<City>();
 
@@ -84,6 +84,8 @@ public static class DbInitializer
         using var reader = new StreamReader(csvPath);
         using var csv = new CsvReader(reader, config);
 
+        csv.Context.RegisterClassMap<EventCodeDefinitionCsvMap>();
+
         var records = new List<EventCodeDefinition>();
 
         await foreach (var row in csv.GetRecordsAsync<EventCodeDefinitionCsv>(cancellationToken))
@@ -102,26 +104,8 @@ public static class DbInitializer
 
     private static string ResolveDataPath(string fileName)
     {
-        // Resolve to the repo-level data folder when running from bin/*.
-        // .. / .. / .. / .. / data / {fileName}
         var baseDir = AppContext.BaseDirectory;
-        var path = Path.Combine(baseDir, "..", "..", "..", "..", "data", fileName);
+        var path = Path.Combine(baseDir, fileName);
         return Path.GetFullPath(path);
-    }
-
-    [UsedImplicitly]
-    private sealed class CityCsv
-    {
-        public int CityId { get; init; }
-        public string CityName { get; init; } = string.Empty;
-        public string TimeZone { get; init; } = string.Empty;
-    }
-
-    [UsedImplicitly]
-    private sealed class EventCodeDefinitionCsv
-    {
-        public string EventCode { get; init; } = string.Empty;
-        public string EventDescription { get; init; } = string.Empty;
-        public string LongDescription { get; init; } = string.Empty;
     }
 }

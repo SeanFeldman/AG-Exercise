@@ -55,16 +55,6 @@ docker exec ag_exercise /opt/mssql-tools18/bin/sqlcmd `
 dotnet tool install dotnet-ef
 ```
 
-1. Create the initial EF Core migration and apply it (need to be in the src/Railcar directory for the relative paths to work correctly)
-
-```PowerShell
-cd ./src/Railcar
-dotnet ef migrations add InitialCreate --project ..\Railcar.Data --startup-project . --context RailcarDbContext
-dotnet ef database update --project ..\Railcar.Data --startup-project . --context RailcarDbContext
-```
-
-The application will apply pending migrations and seed lookup data for cities and event code definitions from the CSV files at startup.
-
 ## Data model diagram
 
 ![Railcar data model](docs/images/railcar-data-model.png)
