@@ -1,0 +1,17 @@
+root = false
+
+[test]
+indent_style = space
+indent_size = 4
+
+# Require test class names to end with _Tests
+[*Tests.cs]
+dotnet_naming_rule.test_files_rule.severity = warning
+dotnet_naming_rule.test_files_rule.style = upper_camel_case_tests_style
+dotnet_naming_rule.test_files_rule.symbols = test_files_symbols
+
+dotnet_naming_symbols.test_files_symbols.applicable_accessibilities = public
+dotnet_naming_symbols.test_files_symbols.applicable_kinds = class
+
+dotnet_naming_style.upper_camel_case_tests_style.capitalization = pascal_case
+dotnet_naming_style.upper_camel_case_tests_style.required_suffix = _Tests

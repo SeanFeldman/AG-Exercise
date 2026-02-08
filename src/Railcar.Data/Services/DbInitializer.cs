@@ -5,22 +5,30 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Railcar.Data.Entities;
 
-namespace Railcar.Data.Infrastructure;
+namespace Railcar.Data.Services;
 
 public static class DbInitializer
 {
-    public static async Task InitializeAsync(IServiceProvider services, CancellationToken cancellationToken = default)
+    public static async Task InitializeAsync(
+        IServiceProvider services, 
+        bool executeMigrations = true,
+        CancellationToken cancellationToken = default)
     {
         using var scope = services.CreateScope();
         var context = scope.ServiceProvider.GetRequiredService<RailcarDbContext>();
 
-        await context.Database.MigrateAsync(cancellationToken);
+        if (executeMigrations)
+        {
+            await context.Database.MigrateAsync(cancellationToken);
+        }
 
         await SeedCitiesAsync(context, cancellationToken);
         await SeedEventCodesAsync(context, cancellationToken);
     }
 
-    private static async Task SeedCitiesAsync(RailcarDbContext context, CancellationToken cancellationToken)
+    private static async Task SeedCitiesAsync(
+        RailcarDbContext context, 
+        CancellationToken cancellationToken)
     {
         if (await context.Cities.AnyAsync(cancellationToken))
         {
@@ -61,7 +69,9 @@ public static class DbInitializer
         await context.SaveChangesAsync(cancellationToken);
     }
 
-    private static async Task SeedEventCodesAsync(RailcarDbContext context, CancellationToken cancellationToken)
+    private static async Task SeedEventCodesAsync(
+        RailcarDbContext context, 
+        CancellationToken cancellationToken)
     {
         if (await context.EventCodeDefinitions.AnyAsync(cancellationToken))
         {
@@ -102,7 +112,8 @@ public static class DbInitializer
         await context.SaveChangesAsync(cancellationToken);
     }
 
-    private static string ResolveDataPath(string fileName)
+    private static string ResolveDataPath(
+        string fileName)
     {
         var baseDir = AppContext.BaseDirectory;
         var path = Path.Combine(baseDir, fileName);

@@ -12,4 +12,5 @@
   <Project Path="src/Railcar.Data/Railcar.Data.csproj" />
   <Project Path="src/Railcar.Shared/Railcar.Shared.csproj" />
   <Project Path="src/Railcar/Railcar.csproj" />
+  <Project Path="test/Railcar.Tests/Railcar.Tests.csproj" />
 </Solution>

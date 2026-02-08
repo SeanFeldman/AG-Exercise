@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Shouldly" />
+    <PackageReference Include="xunit" />
+    <PackageReference Include="xunit.runner.visualstudio" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" />
+    <PackageReference Include="Verify.Xunit" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Railcar.Data\Railcar.Data.csproj" />
+    <ProjectReference Include="..\..\src\Railcar.Shared\Railcar.Shared.csproj" />
+  </ItemGroup>
+
+  <ItemGroup Label="Used for testing trips generation">
+	<None Include="..\..\data\canadian_cities.csv" Link="canadian_cities.csv" CopyToOutputDirectory="PreserveNewest" />
+	<None Include="..\..\data\event_code_definitions.csv" Link="event_code_definitions.csv" CopyToOutputDirectory="PreserveNewest" />
+	<None Include="..\..\data\equipment_events.csv" Link="equipment_events.csv" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EditorConfigFiles Remove=".editorconfig" />
+  </ItemGroup>
+
+</Project>

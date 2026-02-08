@@ -1,3 +1,4 @@
+using System.Net.Http.Headers;
 using System.Net.Http.Json;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Forms;
@@ -5,19 +6,26 @@ using Railcar.Shared.Trips;
 
 namespace Railcar.Client.Pages;
 
+// ReSharper disable once ClassNeverInstantiated.Global
 public partial class RailcarTrips(HttpClient httpClient) : ComponentBase
 {
     private IBrowserFile? _selectedFile;
     private bool _hasFile;
-    private bool _isUploading;
-    private string? _statusMessage;
-    private List<RailcarTripDto> _trips = new();
+    private List<RailcarTripDto> _trips = [];
+    private long? _selectedTripId;
+    private List<RailcarTripEventDto> _selectedTripEvents = [];
+    private bool _isLoadingEvents;
+
+    private bool IsUploading { get; set; }
+    private bool HasTripsToShow => _trips.Count > 0;
+    private string? StatusMessage { get; set; }
+    private bool UploadingDisabled => !_hasFile || IsUploading;
 
     private void OnFileSelected(InputFileChangeEventArgs e)
     {
         _selectedFile = e.File;
         _hasFile = _selectedFile is not null;
-        _statusMessage = _hasFile
+        StatusMessage = _hasFile
             ? $"Selected file: {_selectedFile!.Name} ({_selectedFile.Size} bytes)"
             : "No file selected.";
     }
@@ -26,28 +34,28 @@ public partial class RailcarTrips(HttpClient httpClient) : ComponentBase
     {
         if (_selectedFile is null)
         {
-            _statusMessage = "Please select a CSV file first.";
+            StatusMessage = "Please select a CSV file first.";
             return;
         }
 
-        _isUploading = true;
-        _statusMessage = "Uploading and processing file...";
+        IsUploading = true;
+        StatusMessage = "Uploading and processing file...";
 
         try
         {
             using var content = new MultipartFormDataContent();
             await using var stream = _selectedFile.OpenReadStream(long.MaxValue);
             var fileContent = new StreamContent(stream);
-            fileContent.Headers.ContentType =
-                new System.Net.Http.Headers.MediaTypeHeaderValue("text/csv");
+            fileContent.Headers.ContentType = new MediaTypeHeaderValue("text/csv");
             content.Add(fileContent, "file", _selectedFile.Name);
 
+            // TODO: the logic of talking to the API endpoints could be extracted to a local service but for simplicity doing it here
             var response = await httpClient.PostAsync("api/trips/upload", content);
 
             if (!response.IsSuccessStatusCode)
             {
-                _statusMessage =
-                    $"Upload failed: {(int)response.StatusCode} {response.ReasonPhrase}";
+                var body = await response.Content.ReadAsStringAsync();
+                StatusMessage = $"Upload failed: {(int)response.StatusCode} {response.ReasonPhrase}. Body: {body}";
                 return;
             }
 
@@ -55,23 +63,52 @@ public partial class RailcarTrips(HttpClient httpClient) : ComponentBase
 
             if (trips is null)
             {
-                _statusMessage = "Upload succeeded but no trips were returned.";
-                _trips = new List<RailcarTripDto>();
+                _trips = [];
+                StatusMessage = "Upload succeeded but no trips were returned.";
             }
             else
             {
                 _trips = trips;
-                _statusMessage =
-                    $"Upload and processing completed. {_trips.Count} trips returned.";
+                StatusMessage = $"Upload and processing completed. {_trips.Count} trips returned.";
             }
         }
         catch (Exception ex)
         {
-            _statusMessage = $"Error uploading file: {ex.Message}";
+            StatusMessage = $"Error uploading file: {ex.Message}";
         }
         finally
         {
-            _isUploading = false;
+            IsUploading = false;
+        }
+    }
+
+    private async Task SelectTrip(long id)
+    {
+        _selectedTripId = id;
+        _selectedTripEvents = [];
+        _isLoadingEvents = true;
+
+        try
+        {
+            var response = await httpClient.GetAsync($"api/trips/{id}/events");
+
+            if (!response.IsSuccessStatusCode)
+            {
+                var body = await response.Content.ReadAsStringAsync();
+                StatusMessage = $"Failed to load events for trip {id}: {(int)response.StatusCode} {response.ReasonPhrase}. Body: {body}";
+                return;
+            }
+
+            var eventsForTrip = await response.Content.ReadFromJsonAsync<List<RailcarTripEventDto>>();
+            _selectedTripEvents = eventsForTrip ?? [];
+        }
+        catch (Exception ex)
+        {
+            StatusMessage = $"Error loading events for trip {id}: {ex.Message}";
+        }
+        finally
+        {
+            _isLoadingEvents = false;
         }
     }
 }

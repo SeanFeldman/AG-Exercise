@@ -1,7 +1,6 @@
-using System;
 using CsvHelper.Configuration;
 
-namespace Railcar.Data.Infrastructure;
+namespace Railcar.Data.Services;
 
 // ReSharper disable once ClassNeverInstantiated.Global
 internal sealed class EquipmentEventCsv
@@ -12,6 +11,7 @@ internal sealed class EquipmentEventCsv
     public int CityId { get; init; }
 }
 
+// ReSharper disable once ClassNeverInstantiated.Global
 internal sealed class EquipmentEventCsvMap : ClassMap<EquipmentEventCsv>
 {
     public EquipmentEventCsvMap()

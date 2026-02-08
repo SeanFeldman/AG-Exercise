@@ -5,42 +5,102 @@
 <h1>Railcar Trips</h1>
 
 <InputFile OnChange="OnFileSelected" accept=".csv" />
-<button class="btn btn-primary" @onclick="UploadFile" disabled="@(!_hasFile || _isUploading)">
-    @(_isUploading ? "Uploading..." : "Upload CSV")
+<button class="btn btn-primary" @onclick="UploadFile" disabled="@UploadingDisabled">
+    @(IsUploading ? "Uploading..." : "Upload CSV")
 </button>
 
-@if (!string.IsNullOrWhiteSpace(_statusMessage))
+@if (!string.IsNullOrWhiteSpace(StatusMessage))
 {
-    <p>@_statusMessage</p>
+    <p>@StatusMessage</p>
 }
 
-@if (_trips is not null && _trips.Count > 0)
+@if (HasTripsToShow)
 {
     <h2>Processed Trips</h2>
     <table class="table table-striped">
         <thead>
-        <tr>
-            <th>Equipment Id</th>
-            <th>Origin City Id</th>
-            <th>Destination City Id</th>
-            <th>Start</th>
-            <th>End</th>
-            <th>Total Hours</th>
-        </tr>
+            <tr>
+                <th>Trip Id</th>
+                <th>Equipment Id</th>
+                <th>Origin City</th>
+                <th>Destination City</th>
+                <th>Start</th>
+                <th>End</th>
+                <th>Total Hours</th>
+                <th></th>
+            </tr>
         </thead>
         <tbody>
-        @foreach (var trip in _trips)
-        {
-            <tr>
-                <td>@trip.EquipmentId</td>
-                <td>@trip.OriginCityId</td>
-                <td>@trip.DestinationCityId</td>
-                @* TODO: sort out how to do it better *@
-                <td>@trip.StartLocal.ToString("u")</td>
-                <td>@trip.EndLocal.ToString("u")</td>
-                <td>@trip.TotalTripHours</td>
-            </tr>
-        }
+            @foreach (var trip in _trips)
+            {
+                <tr>
+                    <td>@trip.Id</td>
+                    <td>@trip.EquipmentId</td>
+                    <td>@trip.OriginCityName</td>
+                    <td>@trip.DestinationCityName</td>
+                    <td>@trip.StartUtc.ToString("u")</td>
+                    <td>@trip.EndUtc.ToString("u")</td>
+                    @* TODO: I'd handle it a bit different to show not just hours, especially when minutes value is significant' *@
+                    <td>@Math.Truncate(trip.TotalTripHours)</td>
+                    <td>
+                        <button type="button"
+                                class="btn btn-link btn-sm"
+                                @onclick="() => SelectTrip(trip.Id)">
+                            View events
+                        </button>
+                    </td>
+                </tr>
+            }
         </tbody>
     </table>
+}
+
+@if (_selectedTripId is not null)
+{
+    <div class="position-fixed top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
+         style="background-color: rgba(0, 0, 0, 0.4); z-index: 1050;">
+        <div class="card" style="min-width: 60%; max-width: 80%; max-height: 80%; overflow: auto;">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Events for trip @_selectedTripId</span>
+                <button type="button"
+                        class="btn-close"
+                        aria-label="Close"
+                        @onclick="() => _selectedTripId = null"></button>
+            </div>
+            <div class="card-body">
+                @if (_isLoadingEvents)
+                {
+                    <p>Loading events...</p>
+                }
+                else if (_selectedTripEvents.Count == 0)
+                {
+                    <p>No events for this trip.</p>
+                }
+                else
+                {
+                    <table class="table table-sm table-bordered mb-0">
+                        <thead>
+                        <tr>
+                            <th>Description</th>
+                            <th>City</th>
+                            <th>Local Time</th>
+                            <th>UTC Time</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        @foreach (var ev in _selectedTripEvents)
+                        {
+                            <tr>
+                                <td>@ev.EventDescription</td>
+                                <td>@ev.CityName</td>
+                                    <td>@ev.EventLocalTime.ToTripDetailDateTime()</td>
+                                    <td>@ev.EventUtcTime.ToTripDetailDateTime()</td>
+                            </tr>
+                        }
+                        </tbody>
+                    </table>
+                }
+            </div>
+        </div>
+    </div>
 }

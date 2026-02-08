@@ -1,6 +1,6 @@
 using CsvHelper.Configuration;
 
-namespace Railcar.Data.Infrastructure;
+namespace Railcar.Data.Services;
 
 // ReSharper disable once ClassNeverInstantiated.Global
 internal sealed class EventCodeDefinitionCsv

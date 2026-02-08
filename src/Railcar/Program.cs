@@ -2,8 +2,10 @@ using System.Diagnostics;
 using Microsoft.EntityFrameworkCore;
 using Railcar.Components;
 using Railcar.Data;
-using Railcar.Data.Infrastructure;
+using Railcar.Data.Services;
 using Railcar.Endpoints;
+
+// TODO: Security (authentication and authorization) or put this behind secured service like APIM
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -20,6 +22,9 @@ var connectionString = builder.Configuration.GetConnectionString("RailcarDb")
 
 builder.Services.AddDbContext<RailcarDbContext>(options =>
     options.UseSqlServer(connectionString));
+
+builder.Services.AddScoped<ITripImportService, TripImportService>();
+builder.Services.AddScoped<ITripService, TripService>();
 
 var app = builder.Build();
 

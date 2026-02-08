@@ -1,0 +1,1217 @@
+﻿[
+  {
+    Id: 1,
+    EquipmentId: BCAR4321,
+    OriginCityName: Vancouver,
+    DestinationCityName: Saskatoon,
+    StartUtc: 2025-01-07T16:00:00.0000000Z,
+    EndUtc: 2025-01-31T18:08:00.0000000Z,
+    TotalTripHours: 578.1333333333333
+  },
+  {
+    Id: 2,
+    EquipmentId: BCAR4321,
+    OriginCityName: Moose Jaw,
+    DestinationCityName: London,
+    StartUtc: 2025-01-31T19:10:00.0000000Z,
+    EndUtc: 2025-02-19T15:23:00.0000000Z,
+    TotalTripHours: 452.21666666666664
+  },
+  {
+    Id: 3,
+    EquipmentId: BCAR4321,
+    OriginCityName: Kitchener,
+    DestinationCityName: Saguenay,
+    StartUtc: 2025-02-20T05:01:00.0000000Z,
+    EndUtc: 2025-03-13T01:57:00.0000000Z,
+    TotalTripHours: 500.93333333333334
+  },
+  {
+    Id: 4,
+    EquipmentId: BCAR4321,
+    OriginCityName: Rimouski,
+    DestinationCityName: Dartmouth,
+    StartUtc: 2025-03-14T11:42:00.0000000Z,
+    EndUtc: 2025-04-07T01:37:00.0000000Z,
+    TotalTripHours: 565.9166666666666
+  },
+  {
+    Id: 5,
+    EquipmentId: BCAR4321,
+    OriginCityName: Halifax,
+    DestinationCityName: Edmundston,
+    StartUtc: 2025-04-08T17:54:00.0000000Z,
+    EndUtc: 2025-05-01T06:53:00.0000000Z,
+    TotalTripHours: 540.9833333333333
+  },
+  {
+    Id: 6,
+    EquipmentId: BCAR4321,
+    OriginCityName: Rimouski,
+    DestinationCityName: Windsor,
+    StartUtc: 2025-05-02T14:00:00.0000000Z,
+    EndUtc: 2025-05-25T16:21:00.0000000Z,
+    TotalTripHours: 554.35
+  },
+  {
+    Id: 7,
+    EquipmentId: BCAR4321,
+    OriginCityName: Kitchener,
+    DestinationCityName: Brandon,
+    StartUtc: 2025-05-25T22:45:00.0000000Z,
+    EndUtc: 2025-06-18T21:46:00.0000000Z,
+    TotalTripHours: 575.0166666666667
+  },
+  {
+    Id: 8,
+    EquipmentId: BCAR4321,
+    OriginCityName: Moose Jaw,
+    DestinationCityName: Victoria,
+    StartUtc: 2025-06-20T18:04:00.0000000Z,
+    EndUtc: 2025-07-11T17:09:00.0000000Z,
+    TotalTripHours: 503.0833333333333
+  },
+  {
+    Id: 9,
+    EquipmentId: BCAR4321,
+    OriginCityName: Vancouver,
+    DestinationCityName: Saskatoon,
+    StartUtc: 2025-07-12T10:54:00.0000000Z,
+    EndUtc: 2025-08-01T01:06:00.0000000Z,
+    TotalTripHours: 470.2
+  },
+  {
+    Id: 10,
+    EquipmentId: BCAR4321,
+    OriginCityName: Moose Jaw,
+    DestinationCityName: London,
+    StartUtc: 2025-08-02T03:06:00.0000000Z,
+    EndUtc: 2025-08-23T12:55:00.0000000Z,
+    TotalTripHours: 513.8166666666667
+  },
+  {
+    Id: 11,
+    EquipmentId: BCAR4321,
+    OriginCityName: Kitchener,
+    DestinationCityName: Saguenay,
+    StartUtc: 2025-08-24T10:07:00.0000000Z,
+    EndUtc: 2025-09-16T08:32:00.0000000Z,
+    TotalTripHours: 550.4166666666666
+  },
+  {
+    Id: 12,
+    EquipmentId: BCAR4321,
+    OriginCityName: Rimouski,
+    DestinationCityName: Dartmouth,
+    StartUtc: 2025-09-17T00:30:00.0000000Z,
+    EndUtc: 2025-10-05T21:15:00.0000000Z,
+    TotalTripHours: 452.75
+  },
+  {
+    Id: 13,
+    EquipmentId: BCAR4321,
+    OriginCityName: Halifax,
+    DestinationCityName: Edmundston,
+    StartUtc: 2025-10-06T20:17:00.0000000Z,
+    EndUtc: 2025-10-24T07:31:00.0000000Z,
+    TotalTripHours: 419.23333333333335
+  },
+  {
+    Id: 14,
+    EquipmentId: BCAR4321,
+    OriginCityName: Rimouski,
+    DestinationCityName: Windsor,
+    StartUtc: 2025-10-25T09:16:00.0000000Z,
+    EndUtc: 2025-11-11T04:08:00.0000000Z,
+    TotalTripHours: 402.8666666666667
+  },
+  {
+    Id: 15,
+    EquipmentId: BCAR4321,
+    OriginCityName: Kitchener,
+    DestinationCityName: Brandon,
+    StartUtc: 2025-11-12T23:20:00.0000000Z,
+    EndUtc: 2025-12-02T23:37:00.0000000Z,
+    TotalTripHours: 480.28333333333336
+  },
+  {
+    Id: 16,
+    EquipmentId: BCAR4321,
+    OriginCityName: Moose Jaw,
+    DestinationCityName: Victoria,
+    StartUtc: 2025-12-03T17:50:00.0000000Z,
+    EndUtc: 2025-12-26T13:38:00.0000000Z,
+    TotalTripHours: 547.8
+  },
+  {
+    Id: 17,
+    EquipmentId: BCAR4321,
+    OriginCityName: Vancouver,
+    DestinationCityName: Saskatoon,
+    StartUtc: 2025-12-27T22:31:00.0000000Z,
+    EndUtc: 2026-01-19T14:54:00.0000000Z,
+    TotalTripHours: 544.3833333333333
+  },
+  {
+    Id: 18,
+    EquipmentId: BCAR4321,
+    OriginCityName: Moose Jaw,
+    DestinationCityName: London,
+    StartUtc: 2026-01-20T01:46:00.0000000Z,
+    EndUtc: 2026-02-06T22:33:00.0000000Z,
+    TotalTripHours: 428.78333333333336
+  },
+  {
+    Id: 19,
+    EquipmentId: BCAR4321,
+    OriginCityName: Kitchener,
+    DestinationCityName: Saguenay,
+    StartUtc: 2026-02-08T02:06:00.0000000Z,
+    EndUtc: 2026-03-02T10:31:00.0000000Z,
+    TotalTripHours: 536.4166666666666
+  },
+  {
+    Id: 20,
+    EquipmentId: BCAR4321,
+    OriginCityName: Rimouski,
+    DestinationCityName: Dartmouth,
+    StartUtc: 2026-03-03T04:19:00.0000000Z,
+    EndUtc: 2026-03-25T13:31:00.0000000Z,
+    TotalTripHours: 537.2
+  },
+  {
+    Id: 21,
+    EquipmentId: BCAR4321,
+    OriginCityName: Halifax,
+    DestinationCityName: Edmundston,
+    StartUtc: 2026-03-26T18:10:00.0000000Z,
+    EndUtc: 2026-04-22T10:58:00.0000000Z,
+    TotalTripHours: 640.8
+  },
+  {
+    Id: 22,
+    EquipmentId: BCAR4321,
+    OriginCityName: Rimouski,
+    DestinationCityName: Windsor,
+    StartUtc: 2026-04-23T23:51:00.0000000Z,
+    EndUtc: 2026-05-15T10:24:00.0000000Z,
+    TotalTripHours: 514.55
+  },
+  {
+    Id: 23,
+    EquipmentId: BCAR4321,
+    OriginCityName: Kitchener,
+    DestinationCityName: Brandon,
+    StartUtc: 2026-05-16T20:45:00.0000000Z,
+    EndUtc: 2026-06-04T19:57:00.0000000Z,
+    TotalTripHours: 455.2
+  },
+  {
+    Id: 24,
+    EquipmentId: BCAR4321,
+    OriginCityName: Moose Jaw,
+    DestinationCityName: Victoria,
+    StartUtc: 2026-06-06T06:22:00.0000000Z,
+    EndUtc: 2026-06-30T01:22:00.0000000Z,
+    TotalTripHours: 571.0
+  },
+  {
+    Id: 25,
+    EquipmentId: BCAR4321,
+    OriginCityName: Vancouver,
+    DestinationCityName: Saskatoon,
+    StartUtc: 2026-06-30T01:33:00.0000000Z,
+    EndUtc: 2026-07-19T12:17:00.0000000Z,
+    TotalTripHours: 466.73333333333335
+  },
+  {
+    Id: 26,
+    EquipmentId: BCAR4321,
+    OriginCityName: Moose Jaw,
+    DestinationCityName: London,
+    StartUtc: 2026-07-20T17:16:00.0000000Z,
+    EndUtc: 2026-08-13T14:08:00.0000000Z,
+    TotalTripHours: 572.8666666666667
+  },
+  {
+    Id: 27,
+    EquipmentId: BCAR4321,
+    OriginCityName: Kitchener,
+    DestinationCityName: Saguenay,
+    StartUtc: 2026-08-13T16:01:00.0000000Z,
+    EndUtc: 2026-09-04T22:58:00.0000000Z,
+    TotalTripHours: 534.95
+  },
+  {
+    Id: 28,
+    EquipmentId: BCAR4321,
+    OriginCityName: Rimouski,
+    DestinationCityName: Dartmouth,
+    StartUtc: 2026-09-05T12:04:00.0000000Z,
+    EndUtc: 2026-09-27T08:06:00.0000000Z,
+    TotalTripHours: 524.0333333333333
+  },
+  {
+    Id: 29,
+    EquipmentId: BCAR4321,
+    OriginCityName: Halifax,
+    DestinationCityName: Edmundston,
+    StartUtc: 2026-09-28T21:17:00.0000000Z,
+    EndUtc: 2026-10-18T07:59:00.0000000Z,
+    TotalTripHours: 466.7
+  },
+  {
+    Id: 30,
+    EquipmentId: BCAR4321,
+    OriginCityName: Rimouski,
+    DestinationCityName: Windsor,
+    StartUtc: 2026-10-18T14:25:00.0000000Z,
+    EndUtc: 2026-11-06T13:10:00.0000000Z,
+    TotalTripHours: 454.75
+  },
+  {
+    Id: 31,
+    EquipmentId: BCAR4321,
+    OriginCityName: Kitchener,
+    DestinationCityName: Brandon,
+    StartUtc: 2026-11-07T17:57:00.0000000Z,
+    EndUtc: 2026-11-24T04:22:00.0000000Z,
+    TotalTripHours: 394.4166666666667
+  },
+  {
+    Id: 32,
+    EquipmentId: BCAR4321,
+    OriginCityName: Moose Jaw,
+    DestinationCityName: Victoria,
+    StartUtc: 2026-11-25T18:07:00.0000000Z,
+    EndUtc: 2026-12-19T18:53:00.0000000Z,
+    TotalTripHours: 576.7666666666667
+  },
+  {
+    Id: 33,
+    EquipmentId: BCAR4321,
+    OriginCityName: Vancouver,
+    DestinationCityName: Saskatoon,
+    StartUtc: 2026-12-20T17:22:00.0000000Z,
+    EndUtc: 2027-01-09T07:51:00.0000000Z,
+    TotalTripHours: 470.48333333333335
+  },
+  {
+    Id: 34,
+    EquipmentId: BCAR4321,
+    OriginCityName: Moose Jaw,
+    DestinationCityName: London,
+    StartUtc: 2027-01-09T20:38:00.0000000Z,
+    EndUtc: 2027-02-01T17:23:00.0000000Z,
+    TotalTripHours: 548.75
+  },
+  {
+    Id: 35,
+    EquipmentId: BCAR4321,
+    OriginCityName: Kitchener,
+    DestinationCityName: Saguenay,
+    StartUtc: 2027-02-02T00:30:00.0000000Z,
+    EndUtc: 2027-02-21T04:23:00.0000000Z,
+    TotalTripHours: 459.8833333333333
+  },
+  {
+    Id: 36,
+    EquipmentId: BCAR4321,
+    OriginCityName: Rimouski,
+    DestinationCityName: Dartmouth,
+    StartUtc: 2027-02-21T17:47:00.0000000Z,
+    EndUtc: 2027-03-13T07:33:00.0000000Z,
+    TotalTripHours: 469.76666666666665
+  },
+  {
+    Id: 37,
+    EquipmentId: BCAR4321,
+    OriginCityName: Halifax,
+    DestinationCityName: Edmundston,
+    StartUtc: 2027-03-13T17:49:00.0000000Z,
+    EndUtc: 2027-04-05T04:43:00.0000000Z,
+    TotalTripHours: 538.9
+  },
+  {
+    Id: 38,
+    EquipmentId: BCAR4321,
+    OriginCityName: Rimouski,
+    DestinationCityName: Windsor,
+    StartUtc: 2027-04-05T21:36:00.0000000Z,
+    EndUtc: 2027-05-01T08:56:00.0000000Z,
+    TotalTripHours: 611.3333333333334
+  },
+  {
+    Id: 39,
+    EquipmentId: BCAR4321,
+    OriginCityName: Kitchener,
+    DestinationCityName: Brandon,
+    StartUtc: 2027-05-03T07:26:00.0000000Z,
+    EndUtc: 2027-05-28T11:45:00.0000000Z,
+    TotalTripHours: 604.3166666666667
+  },
+  {
+    Id: 40,
+    EquipmentId: BCAR4321,
+    OriginCityName: Moose Jaw,
+    DestinationCityName: Victoria,
+    StartUtc: 2027-05-30T12:03:00.0000000Z,
+    EndUtc: 2027-06-15T03:28:00.0000000Z,
+    TotalTripHours: 375.4166666666667
+  },
+  {
+    Id: 41,
+    EquipmentId: BCAR4321,
+    OriginCityName: Vancouver,
+    DestinationCityName: Saskatoon,
+    StartUtc: 2027-06-17T02:50:00.0000000Z,
+    EndUtc: 2027-07-13T10:59:00.0000000Z,
+    TotalTripHours: 632.15
+  },
+  {
+    Id: 42,
+    EquipmentId: BCAR4321,
+    OriginCityName: Moose Jaw,
+    DestinationCityName: London,
+    StartUtc: 2027-07-14T09:24:00.0000000Z,
+    EndUtc: 2027-08-06T04:34:00.0000000Z,
+    TotalTripHours: 547.1666666666666
+  },
+  {
+    Id: 43,
+    EquipmentId: BCAR4321,
+    OriginCityName: Kitchener,
+    DestinationCityName: Saguenay,
+    StartUtc: 2027-08-06T16:01:00.0000000Z,
+    EndUtc: 2027-08-25T19:38:00.0000000Z,
+    TotalTripHours: 459.6166666666667
+  },
+  {
+    Id: 44,
+    EquipmentId: BCAR4321,
+    OriginCityName: Rimouski,
+    DestinationCityName: Dartmouth,
+    StartUtc: 2027-08-27T10:58:00.0000000Z,
+    EndUtc: 2027-09-16T00:21:00.0000000Z,
+    TotalTripHours: 469.3833333333333
+  },
+  {
+    Id: 45,
+    EquipmentId: BCAR4321,
+    OriginCityName: Halifax,
+    DestinationCityName: Edmundston,
+    StartUtc: 2027-09-17T03:32:00.0000000Z,
+    EndUtc: 2027-10-07T16:44:00.0000000Z,
+    TotalTripHours: 493.2
+  },
+  {
+    Id: 46,
+    EquipmentId: ACAR1234,
+    OriginCityName: Vancouver,
+    DestinationCityName: Saskatoon,
+    StartUtc: 2025-01-05T16:00:00.0000000Z,
+    EndUtc: 2025-01-26T20:17:00.0000000Z,
+    TotalTripHours: 508.28333333333336
+  },
+  {
+    Id: 47,
+    EquipmentId: ACAR1234,
+    OriginCityName: Moose Jaw,
+    DestinationCityName: London,
+    StartUtc: 2025-01-28T13:24:00.0000000Z,
+    EndUtc: 2025-02-17T07:23:00.0000000Z,
+    TotalTripHours: 473.98333333333335
+  },
+  {
+    Id: 48,
+    EquipmentId: ACAR1234,
+    OriginCityName: Kitchener,
+    DestinationCityName: Saguenay,
+    StartUtc: 2025-02-18T08:57:00.0000000Z,
+    EndUtc: 2025-03-09T05:51:00.0000000Z,
+    TotalTripHours: 452.9
+  },
+  {
+    Id: 49,
+    EquipmentId: ACAR1234,
+    OriginCityName: Rimouski,
+    DestinationCityName: Dartmouth,
+    StartUtc: 2025-03-10T04:39:00.0000000Z,
+    EndUtc: 2025-03-30T00:39:00.0000000Z,
+    TotalTripHours: 476.0
+  },
+  {
+    Id: 50,
+    EquipmentId: ACAR1234,
+    OriginCityName: Halifax,
+    DestinationCityName: Edmundston,
+    StartUtc: 2025-03-31T08:06:00.0000000Z,
+    EndUtc: 2025-04-25T23:29:00.0000000Z,
+    TotalTripHours: 615.3833333333333
+  },
+  {
+    Id: 51,
+    EquipmentId: ACAR1234,
+    OriginCityName: Rimouski,
+    DestinationCityName: Windsor,
+    StartUtc: 2025-04-26T20:41:00.0000000Z,
+    EndUtc: 2025-05-17T19:43:00.0000000Z,
+    TotalTripHours: 503.03333333333336
+  },
+  {
+    Id: 52,
+    EquipmentId: ACAR1234,
+    OriginCityName: Kitchener,
+    DestinationCityName: Brandon,
+    StartUtc: 2025-05-18T03:27:00.0000000Z,
+    EndUtc: 2025-06-09T18:24:00.0000000Z,
+    TotalTripHours: 542.95
+  },
+  {
+    Id: 53,
+    EquipmentId: ACAR1234,
+    OriginCityName: Moose Jaw,
+    DestinationCityName: Victoria,
+    StartUtc: 2025-06-11T13:02:00.0000000Z,
+    EndUtc: 2025-07-01T23:40:00.0000000Z,
+    TotalTripHours: 490.6333333333333
+  },
+  {
+    Id: 54,
+    EquipmentId: ACAR1234,
+    OriginCityName: Vancouver,
+    DestinationCityName: Saskatoon,
+    StartUtc: 2025-07-03T08:54:00.0000000Z,
+    EndUtc: 2025-07-21T18:31:00.0000000Z,
+    TotalTripHours: 441.6166666666667
+  },
+  {
+    Id: 55,
+    EquipmentId: ACAR1234,
+    OriginCityName: Moose Jaw,
+    DestinationCityName: London,
+    StartUtc: 2025-07-22T15:09:00.0000000Z,
+    EndUtc: 2025-08-09T23:38:00.0000000Z,
+    TotalTripHours: 440.48333333333335
+  },
+  {
+    Id: 56,
+    EquipmentId: ACAR1234,
+    OriginCityName: Kitchener,
+    DestinationCityName: Saguenay,
+    StartUtc: 2025-08-11T21:57:00.0000000Z,
+    EndUtc: 2025-08-31T21:28:00.0000000Z,
+    TotalTripHours: 479.51666666666665
+  },
+  {
+    Id: 57,
+    EquipmentId: ACAR1234,
+    OriginCityName: Rimouski,
+    DestinationCityName: Dartmouth,
+    StartUtc: 2025-09-01T16:56:00.0000000Z,
+    EndUtc: 2025-09-23T21:57:00.0000000Z,
+    TotalTripHours: 533.0166666666667
+  },
+  {
+    Id: 58,
+    EquipmentId: ACAR1234,
+    OriginCityName: Halifax,
+    DestinationCityName: Edmundston,
+    StartUtc: 2025-09-25T04:19:00.0000000Z,
+    EndUtc: 2025-10-15T02:54:00.0000000Z,
+    TotalTripHours: 478.5833333333333
+  },
+  {
+    Id: 59,
+    EquipmentId: ACAR1234,
+    OriginCityName: Rimouski,
+    DestinationCityName: Windsor,
+    StartUtc: 2025-10-16T13:58:00.0000000Z,
+    EndUtc: 2025-11-09T19:36:00.0000000Z,
+    TotalTripHours: 581.6333333333333
+  },
+  {
+    Id: 60,
+    EquipmentId: ACAR1234,
+    OriginCityName: Kitchener,
+    DestinationCityName: Brandon,
+    StartUtc: 2025-11-10T07:17:00.0000000Z,
+    EndUtc: 2025-11-25T01:05:00.0000000Z,
+    TotalTripHours: 353.8
+  },
+  {
+    Id: 61,
+    EquipmentId: ACAR1234,
+    OriginCityName: Moose Jaw,
+    DestinationCityName: Victoria,
+    StartUtc: 2025-11-26T17:43:00.0000000Z,
+    EndUtc: 2025-12-19T22:22:00.0000000Z,
+    TotalTripHours: 556.65
+  },
+  {
+    Id: 62,
+    EquipmentId: ACAR1234,
+    OriginCityName: Vancouver,
+    DestinationCityName: Saskatoon,
+    StartUtc: 2025-12-20T06:19:00.0000000Z,
+    EndUtc: 2026-01-13T16:27:00.0000000Z,
+    TotalTripHours: 586.1333333333333
+  },
+  {
+    Id: 63,
+    EquipmentId: ACAR1234,
+    OriginCityName: Moose Jaw,
+    DestinationCityName: London,
+    StartUtc: 2026-01-15T14:59:00.0000000Z,
+    EndUtc: 2026-02-09T08:39:00.0000000Z,
+    TotalTripHours: 593.6666666666666
+  },
+  {
+    Id: 64,
+    EquipmentId: ACAR1234,
+    OriginCityName: Kitchener,
+    DestinationCityName: Saguenay,
+    StartUtc: 2026-02-10T18:03:00.0000000Z,
+    EndUtc: 2026-03-06T16:47:00.0000000Z,
+    TotalTripHours: 574.7333333333333
+  },
+  {
+    Id: 65,
+    EquipmentId: ACAR1234,
+    OriginCityName: Rimouski,
+    DestinationCityName: Dartmouth,
+    StartUtc: 2026-03-07T09:21:00.0000000Z,
+    EndUtc: 2026-03-29T18:15:00.0000000Z,
+    TotalTripHours: 536.9
+  },
+  {
+    Id: 66,
+    EquipmentId: ACAR1234,
+    OriginCityName: Halifax,
+    DestinationCityName: Edmundston,
+    StartUtc: 2026-03-31T00:24:00.0000000Z,
+    EndUtc: 2026-04-21T19:43:00.0000000Z,
+    TotalTripHours: 523.3166666666667
+  },
+  {
+    Id: 67,
+    EquipmentId: ACAR1234,
+    OriginCityName: Rimouski,
+    DestinationCityName: Windsor,
+    StartUtc: 2026-04-22T19:41:00.0000000Z,
+    EndUtc: 2026-05-12T06:20:00.0000000Z,
+    TotalTripHours: 466.65
+  },
+  {
+    Id: 68,
+    EquipmentId: ACAR1234,
+    OriginCityName: Kitchener,
+    DestinationCityName: Brandon,
+    StartUtc: 2026-05-14T03:20:00.0000000Z,
+    EndUtc: 2026-06-05T17:20:00.0000000Z,
+    TotalTripHours: 542.0
+  },
+  {
+    Id: 69,
+    EquipmentId: ACAR1234,
+    OriginCityName: Moose Jaw,
+    DestinationCityName: Victoria,
+    StartUtc: 2026-06-05T18:25:00.0000000Z,
+    EndUtc: 2026-06-24T09:51:00.0000000Z,
+    TotalTripHours: 447.43333333333334
+  },
+  {
+    Id: 70,
+    EquipmentId: ACAR1234,
+    OriginCityName: Vancouver,
+    DestinationCityName: Saskatoon,
+    StartUtc: 2026-06-24T16:42:00.0000000Z,
+    EndUtc: 2026-07-15T07:37:00.0000000Z,
+    TotalTripHours: 494.9166666666667
+  },
+  {
+    Id: 71,
+    EquipmentId: ACAR1234,
+    OriginCityName: Moose Jaw,
+    DestinationCityName: London,
+    StartUtc: 2026-07-16T22:15:00.0000000Z,
+    EndUtc: 2026-08-07T03:55:00.0000000Z,
+    TotalTripHours: 509.6666666666667
+  },
+  {
+    Id: 72,
+    EquipmentId: ACAR1234,
+    OriginCityName: Kitchener,
+    DestinationCityName: Saguenay,
+    StartUtc: 2026-08-08T09:19:00.0000000Z,
+    EndUtc: 2026-08-27T12:18:00.0000000Z,
+    TotalTripHours: 458.98333333333335
+  },
+  {
+    Id: 73,
+    EquipmentId: ACAR1234,
+    OriginCityName: Rimouski,
+    DestinationCityName: Dartmouth,
+    StartUtc: 2026-08-27T17:42:00.0000000Z,
+    EndUtc: 2026-09-17T19:36:00.0000000Z,
+    TotalTripHours: 505.9
+  },
+  {
+    Id: 74,
+    EquipmentId: ACAR1234,
+    OriginCityName: Halifax,
+    DestinationCityName: Edmundston,
+    StartUtc: 2026-09-19T15:18:00.0000000Z,
+    EndUtc: 2026-10-10T04:18:00.0000000Z,
+    TotalTripHours: 493.0
+  },
+  {
+    Id: 75,
+    EquipmentId: ACAR1234,
+    OriginCityName: Rimouski,
+    DestinationCityName: Windsor,
+    StartUtc: 2026-10-11T08:42:00.0000000Z,
+    EndUtc: 2026-10-29T15:23:00.0000000Z,
+    TotalTripHours: 438.68333333333334
+  },
+  {
+    Id: 76,
+    EquipmentId: ACAR1234,
+    OriginCityName: Kitchener,
+    DestinationCityName: Brandon,
+    StartUtc: 2026-10-29T18:35:00.0000000Z,
+    EndUtc: 2026-11-20T13:54:00.0000000Z,
+    TotalTripHours: 523.3166666666667
+  },
+  {
+    Id: 77,
+    EquipmentId: ACAR1234,
+    OriginCityName: Moose Jaw,
+    DestinationCityName: Victoria,
+    StartUtc: 2026-11-20T19:41:00.0000000Z,
+    EndUtc: 2026-12-08T10:46:00.0000000Z,
+    TotalTripHours: 423.0833333333333
+  },
+  {
+    Id: 78,
+    EquipmentId: ACAR1234,
+    OriginCityName: Vancouver,
+    DestinationCityName: Saskatoon,
+    StartUtc: 2026-12-09T14:28:00.0000000Z,
+    EndUtc: 2026-12-30T13:55:00.0000000Z,
+    TotalTripHours: 503.45
+  },
+  {
+    Id: 79,
+    EquipmentId: ACAR1234,
+    OriginCityName: Moose Jaw,
+    DestinationCityName: London,
+    StartUtc: 2027-01-01T05:35:00.0000000Z,
+    EndUtc: 2027-01-18T13:06:00.0000000Z,
+    TotalTripHours: 415.51666666666665
+  },
+  {
+    Id: 80,
+    EquipmentId: ACAR1234,
+    OriginCityName: Kitchener,
+    DestinationCityName: Saguenay,
+    StartUtc: 2027-01-19T09:08:00.0000000Z,
+    EndUtc: 2027-02-11T23:30:00.0000000Z,
+    TotalTripHours: 566.3666666666667
+  },
+  {
+    Id: 81,
+    EquipmentId: ACAR1234,
+    OriginCityName: Rimouski,
+    DestinationCityName: Dartmouth,
+    StartUtc: 2027-02-13T11:16:00.0000000Z,
+    EndUtc: 2027-03-05T02:40:00.0000000Z,
+    TotalTripHours: 471.4
+  },
+  {
+    Id: 82,
+    EquipmentId: ACAR1234,
+    OriginCityName: Halifax,
+    DestinationCityName: Edmundston,
+    StartUtc: 2027-03-05T13:23:00.0000000Z,
+    EndUtc: 2027-03-27T07:53:00.0000000Z,
+    TotalTripHours: 522.5
+  },
+  {
+    Id: 83,
+    EquipmentId: ACAR1234,
+    OriginCityName: Rimouski,
+    DestinationCityName: Windsor,
+    StartUtc: 2027-03-28T01:46:00.0000000Z,
+    EndUtc: 2027-04-21T01:23:00.0000000Z,
+    TotalTripHours: 575.6166666666667
+  },
+  {
+    Id: 84,
+    EquipmentId: ACAR1234,
+    OriginCityName: Kitchener,
+    DestinationCityName: Brandon,
+    StartUtc: 2027-04-23T00:20:00.0000000Z,
+    EndUtc: 2027-05-16T18:21:00.0000000Z,
+    TotalTripHours: 570.0166666666667
+  },
+  {
+    Id: 85,
+    EquipmentId: ACAR1234,
+    OriginCityName: Moose Jaw,
+    DestinationCityName: Victoria,
+    StartUtc: 2027-05-18T00:08:00.0000000Z,
+    EndUtc: 2027-06-04T05:44:00.0000000Z,
+    TotalTripHours: 413.6
+  },
+  {
+    Id: 86,
+    EquipmentId: ACAR1234,
+    OriginCityName: Vancouver,
+    DestinationCityName: Saskatoon,
+    StartUtc: 2027-06-05T13:12:00.0000000Z,
+    EndUtc: 2027-07-01T16:53:00.0000000Z,
+    TotalTripHours: 627.6833333333333
+  },
+  {
+    Id: 87,
+    EquipmentId: ACAR1234,
+    OriginCityName: Moose Jaw,
+    DestinationCityName: London,
+    StartUtc: 2027-07-02T01:02:00.0000000Z,
+    EndUtc: 2027-07-21T18:26:00.0000000Z,
+    TotalTripHours: 473.4
+  },
+  {
+    Id: 88,
+    EquipmentId: ACAR1234,
+    OriginCityName: Kitchener,
+    DestinationCityName: Saguenay,
+    StartUtc: 2027-07-22T05:55:00.0000000Z,
+    EndUtc: 2027-08-12T02:47:00.0000000Z,
+    TotalTripHours: 500.8666666666667
+  },
+  {
+    Id: 89,
+    EquipmentId: ACAR1234,
+    OriginCityName: Rimouski,
+    DestinationCityName: Dartmouth,
+    StartUtc: 2027-08-12T23:51:00.0000000Z,
+    EndUtc: 2027-09-03T14:32:00.0000000Z,
+    TotalTripHours: 518.6833333333333
+  },
+  {
+    Id: 90,
+    EquipmentId: ACAR1234,
+    OriginCityName: Halifax,
+    DestinationCityName: Edmundston,
+    StartUtc: 2027-09-04T14:24:00.0000000Z,
+    EndUtc: 2027-09-20T05:29:00.0000000Z,
+    TotalTripHours: 375.0833333333333
+  },
+  {
+    Id: 91,
+    EquipmentId: CCAR1111,
+    OriginCityName: Vancouver,
+    DestinationCityName: Saskatoon,
+    StartUtc: 2025-01-05T16:00:00.0000000Z,
+    EndUtc: 2025-01-25T17:19:00.0000000Z,
+    TotalTripHours: 481.31666666666666
+  },
+  {
+    Id: 92,
+    EquipmentId: CCAR1111,
+    OriginCityName: Moose Jaw,
+    DestinationCityName: London,
+    StartUtc: 2025-01-26T07:08:00.0000000Z,
+    EndUtc: 2025-02-16T17:53:00.0000000Z,
+    TotalTripHours: 514.75
+  },
+  {
+    Id: 93,
+    EquipmentId: CCAR1111,
+    OriginCityName: Kitchener,
+    DestinationCityName: Saguenay,
+    StartUtc: 2025-02-18T01:42:00.0000000Z,
+    EndUtc: 2025-03-06T21:58:00.0000000Z,
+    TotalTripHours: 404.26666666666665
+  },
+  {
+    Id: 94,
+    EquipmentId: CCAR1111,
+    OriginCityName: Rimouski,
+    DestinationCityName: Dartmouth,
+    StartUtc: 2025-03-07T11:22:00.0000000Z,
+    EndUtc: 2025-03-25T23:43:00.0000000Z,
+    TotalTripHours: 444.35
+  },
+  {
+    Id: 95,
+    EquipmentId: CCAR1111,
+    OriginCityName: Halifax,
+    DestinationCityName: Edmundston,
+    StartUtc: 2025-03-26T14:37:00.0000000Z,
+    EndUtc: 2025-04-15T04:28:00.0000000Z,
+    TotalTripHours: 469.85
+  },
+  {
+    Id: 96,
+    EquipmentId: CCAR1111,
+    OriginCityName: Rimouski,
+    DestinationCityName: Windsor,
+    StartUtc: 2025-04-16T04:54:00.0000000Z,
+    EndUtc: 2025-05-08T11:39:00.0000000Z,
+    TotalTripHours: 534.75
+  },
+  {
+    Id: 97,
+    EquipmentId: CCAR1111,
+    OriginCityName: Kitchener,
+    DestinationCityName: Brandon,
+    StartUtc: 2025-05-08T20:46:00.0000000Z,
+    EndUtc: 2025-06-01T09:29:00.0000000Z,
+    TotalTripHours: 564.7166666666667
+  },
+  {
+    Id: 98,
+    EquipmentId: CCAR1111,
+    OriginCityName: Moose Jaw,
+    DestinationCityName: Victoria,
+    StartUtc: 2025-06-02T13:04:00.0000000Z,
+    EndUtc: 2025-06-29T04:31:00.0000000Z,
+    TotalTripHours: 639.45
+  },
+  {
+    Id: 99,
+    EquipmentId: CCAR1111,
+    OriginCityName: Vancouver,
+    DestinationCityName: Saskatoon,
+    StartUtc: 2025-06-29T08:29:00.0000000Z,
+    EndUtc: 2025-07-20T08:51:00.0000000Z,
+    TotalTripHours: 504.3666666666667
+  },
+  {
+    Id: 100,
+    EquipmentId: CCAR1111,
+    OriginCityName: Moose Jaw,
+    DestinationCityName: London,
+    StartUtc: 2025-07-21T07:18:00.0000000Z,
+    EndUtc: 2025-08-13T11:34:00.0000000Z,
+    TotalTripHours: 556.2666666666667
+  },
+  {
+    Id: 101,
+    EquipmentId: CCAR1111,
+    OriginCityName: Kitchener,
+    DestinationCityName: Saguenay,
+    StartUtc: 2025-08-14T05:52:00.0000000Z,
+    EndUtc: 2025-08-27T18:17:00.0000000Z,
+    TotalTripHours: 324.4166666666667
+  },
+  {
+    Id: 102,
+    EquipmentId: CCAR1111,
+    OriginCityName: Rimouski,
+    DestinationCityName: Dartmouth,
+    StartUtc: 2025-08-29T15:58:00.0000000Z,
+    EndUtc: 2025-09-23T15:55:00.0000000Z,
+    TotalTripHours: 599.95
+  },
+  {
+    Id: 103,
+    EquipmentId: CCAR1111,
+    OriginCityName: Halifax,
+    DestinationCityName: Edmundston,
+    StartUtc: 2025-09-24T10:19:00.0000000Z,
+    EndUtc: 2025-10-11T11:14:00.0000000Z,
+    TotalTripHours: 408.9166666666667
+  },
+  {
+    Id: 104,
+    EquipmentId: CCAR1111,
+    OriginCityName: Rimouski,
+    DestinationCityName: Windsor,
+    StartUtc: 2025-10-12T08:17:00.0000000Z,
+    EndUtc: 2025-10-30T07:39:00.0000000Z,
+    TotalTripHours: 431.3666666666667
+  },
+  {
+    Id: 105,
+    EquipmentId: CCAR1111,
+    OriginCityName: Kitchener,
+    DestinationCityName: Brandon,
+    StartUtc: 2025-10-30T17:50:00.0000000Z,
+    EndUtc: 2025-11-19T02:29:00.0000000Z,
+    TotalTripHours: 464.65
+  },
+  {
+    Id: 106,
+    EquipmentId: CCAR1111,
+    OriginCityName: Moose Jaw,
+    DestinationCityName: Victoria,
+    StartUtc: 2025-11-20T16:02:00.0000000Z,
+    EndUtc: 2025-12-12T18:33:00.0000000Z,
+    TotalTripHours: 530.5166666666667
+  },
+  {
+    Id: 107,
+    EquipmentId: CCAR1111,
+    OriginCityName: Vancouver,
+    DestinationCityName: Saskatoon,
+    StartUtc: 2025-12-13T10:28:00.0000000Z,
+    EndUtc: 2026-01-02T10:55:00.0000000Z,
+    TotalTripHours: 480.45
+  },
+  {
+    Id: 108,
+    EquipmentId: CCAR1111,
+    OriginCityName: Moose Jaw,
+    DestinationCityName: London,
+    StartUtc: 2026-01-03T13:36:00.0000000Z,
+    EndUtc: 2026-01-21T16:37:00.0000000Z,
+    TotalTripHours: 435.01666666666665
+  },
+  {
+    Id: 109,
+    EquipmentId: CCAR1111,
+    OriginCityName: Kitchener,
+    DestinationCityName: Saguenay,
+    StartUtc: 2026-01-21T17:15:00.0000000Z,
+    EndUtc: 2026-02-11T14:34:00.0000000Z,
+    TotalTripHours: 501.31666666666666
+  },
+  {
+    Id: 110,
+    EquipmentId: CCAR1111,
+    OriginCityName: Rimouski,
+    DestinationCityName: Dartmouth,
+    StartUtc: 2026-02-11T23:53:00.0000000Z,
+    EndUtc: 2026-03-05T02:45:00.0000000Z,
+    TotalTripHours: 506.8666666666667
+  },
+  {
+    Id: 111,
+    EquipmentId: CCAR1111,
+    OriginCityName: Halifax,
+    DestinationCityName: Edmundston,
+    StartUtc: 2026-03-06T21:56:00.0000000Z,
+    EndUtc: 2026-03-25T00:47:00.0000000Z,
+    TotalTripHours: 434.85
+  },
+  {
+    Id: 112,
+    EquipmentId: CCAR1111,
+    OriginCityName: Rimouski,
+    DestinationCityName: Windsor,
+    StartUtc: 2026-03-25T11:53:00.0000000Z,
+    EndUtc: 2026-04-18T12:24:00.0000000Z,
+    TotalTripHours: 576.5166666666667
+  },
+  {
+    Id: 113,
+    EquipmentId: CCAR1111,
+    OriginCityName: Kitchener,
+    DestinationCityName: Brandon,
+    StartUtc: 2026-04-20T04:58:00.0000000Z,
+    EndUtc: 2026-05-12T08:45:00.0000000Z,
+    TotalTripHours: 531.7833333333333
+  },
+  {
+    Id: 114,
+    EquipmentId: CCAR1111,
+    OriginCityName: Moose Jaw,
+    DestinationCityName: Victoria,
+    StartUtc: 2026-05-13T07:07:00.0000000Z,
+    EndUtc: 2026-06-03T13:17:00.0000000Z,
+    TotalTripHours: 510.1666666666667
+  },
+  {
+    Id: 115,
+    EquipmentId: CCAR1111,
+    OriginCityName: Vancouver,
+    DestinationCityName: Saskatoon,
+    StartUtc: 2026-06-05T13:08:00.0000000Z,
+    EndUtc: 2026-06-28T15:45:00.0000000Z,
+    TotalTripHours: 554.6166666666667
+  },
+  {
+    Id: 116,
+    EquipmentId: CCAR1111,
+    OriginCityName: Moose Jaw,
+    DestinationCityName: London,
+    StartUtc: 2026-06-28T19:31:00.0000000Z,
+    EndUtc: 2026-07-18T18:11:00.0000000Z,
+    TotalTripHours: 478.6666666666667
+  },
+  {
+    Id: 117,
+    EquipmentId: CCAR1111,
+    OriginCityName: Kitchener,
+    DestinationCityName: Saguenay,
+    StartUtc: 2026-07-20T00:03:00.0000000Z,
+    EndUtc: 2026-08-09T10:32:00.0000000Z,
+    TotalTripHours: 490.48333333333335
+  },
+  {
+    Id: 118,
+    EquipmentId: CCAR1111,
+    OriginCityName: Rimouski,
+    DestinationCityName: Dartmouth,
+    StartUtc: 2026-08-10T18:07:00.0000000Z,
+    EndUtc: 2026-09-03T09:11:00.0000000Z,
+    TotalTripHours: 567.0666666666667
+  },
+  {
+    Id: 119,
+    EquipmentId: CCAR1111,
+    OriginCityName: Halifax,
+    DestinationCityName: Edmundston,
+    StartUtc: 2026-09-04T01:41:00.0000000Z,
+    EndUtc: 2026-09-23T20:54:00.0000000Z,
+    TotalTripHours: 475.21666666666664
+  },
+  {
+    Id: 120,
+    EquipmentId: CCAR1111,
+    OriginCityName: Rimouski,
+    DestinationCityName: Windsor,
+    StartUtc: 2026-09-23T23:49:00.0000000Z,
+    EndUtc: 2026-10-18T17:02:00.0000000Z,
+    TotalTripHours: 593.2166666666667
+  },
+  {
+    Id: 121,
+    EquipmentId: CCAR1111,
+    OriginCityName: Kitchener,
+    DestinationCityName: Brandon,
+    StartUtc: 2026-10-19T03:38:00.0000000Z,
+    EndUtc: 2026-11-04T14:17:00.0000000Z,
+    TotalTripHours: 394.65
+  },
+  {
+    Id: 122,
+    EquipmentId: CCAR1111,
+    OriginCityName: Moose Jaw,
+    DestinationCityName: Victoria,
+    StartUtc: 2026-11-05T09:03:00.0000000Z,
+    EndUtc: 2026-11-26T08:38:00.0000000Z,
+    TotalTripHours: 503.5833333333333
+  },
+  {
+    Id: 123,
+    EquipmentId: CCAR1111,
+    OriginCityName: Vancouver,
+    DestinationCityName: Saskatoon,
+    StartUtc: 2026-11-26T14:12:00.0000000Z,
+    EndUtc: 2026-12-19T16:39:00.0000000Z,
+    TotalTripHours: 554.45
+  },
+  {
+    Id: 124,
+    EquipmentId: CCAR1111,
+    OriginCityName: Moose Jaw,
+    DestinationCityName: London,
+    StartUtc: 2026-12-21T12:09:00.0000000Z,
+    EndUtc: 2027-01-09T22:28:00.0000000Z,
+    TotalTripHours: 466.31666666666666
+  },
+  {
+    Id: 125,
+    EquipmentId: CCAR1111,
+    OriginCityName: Kitchener,
+    DestinationCityName: Saguenay,
+    StartUtc: 2027-01-11T18:25:00.0000000Z,
+    EndUtc: 2027-02-02T13:16:00.0000000Z,
+    TotalTripHours: 522.85
+  },
+  {
+    Id: 126,
+    EquipmentId: CCAR1111,
+    OriginCityName: Rimouski,
+    DestinationCityName: Dartmouth,
+    StartUtc: 2027-02-03T14:38:00.0000000Z,
+    EndUtc: 2027-02-23T14:04:00.0000000Z,
+    TotalTripHours: 479.43333333333334
+  },
+  {
+    Id: 127,
+    EquipmentId: CCAR1111,
+    OriginCityName: Halifax,
+    DestinationCityName: Edmundston,
+    StartUtc: 2027-02-23T22:05:00.0000000Z,
+    EndUtc: 2027-03-12T14:54:00.0000000Z,
+    TotalTripHours: 400.81666666666666
+  },
+  {
+    Id: 128,
+    EquipmentId: CCAR1111,
+    OriginCityName: Rimouski,
+    DestinationCityName: Windsor,
+    StartUtc: 2027-03-14T02:48:00.0000000Z,
+    EndUtc: 2027-04-04T16:52:00.0000000Z,
+    TotalTripHours: 518.0666666666667
+  },
+  {
+    Id: 129,
+    EquipmentId: CCAR1111,
+    OriginCityName: Kitchener,
+    DestinationCityName: Brandon,
+    StartUtc: 2027-04-06T08:06:00.0000000Z,
+    EndUtc: 2027-04-25T15:01:00.0000000Z,
+    TotalTripHours: 462.9166666666667
+  },
+  {
+    Id: 130,
+    EquipmentId: CCAR1111,
+    OriginCityName: Moose Jaw,
+    DestinationCityName: Victoria,
+    StartUtc: 2027-04-26T12:30:00.0000000Z,
+    EndUtc: 2027-05-15T08:09:00.0000000Z,
+    TotalTripHours: 451.65
+  },
+  {
+    Id: 131,
+    EquipmentId: CCAR1111,
+    OriginCityName: Vancouver,
+    DestinationCityName: Saskatoon,
+    StartUtc: 2027-05-17T05:33:00.0000000Z,
+    EndUtc: 2027-06-08T00:55:00.0000000Z,
+    TotalTripHours: 523.3666666666667
+  },
+  {
+    Id: 132,
+    EquipmentId: CCAR1111,
+    OriginCityName: Moose Jaw,
+    DestinationCityName: London,
+    StartUtc: 2027-06-08T05:37:00.0000000Z,
+    EndUtc: 2027-06-30T13:30:00.0000000Z,
+    TotalTripHours: 535.8833333333333
+  },
+  {
+    Id: 133,
+    EquipmentId: CCAR1111,
+    OriginCityName: Kitchener,
+    DestinationCityName: Saguenay,
+    StartUtc: 2027-06-30T23:56:00.0000000Z,
+    EndUtc: 2027-07-21T17:52:00.0000000Z,
+    TotalTripHours: 497.93333333333334
+  },
+  {
+    Id: 134,
+    EquipmentId: CCAR1111,
+    OriginCityName: Rimouski,
+    DestinationCityName: Dartmouth,
+    StartUtc: 2027-07-22T02:08:00.0000000Z,
+    EndUtc: 2027-08-10T12:40:00.0000000Z,
+    TotalTripHours: 466.53333333333336
+  },
+  {
+    Id: 135,
+    EquipmentId: CCAR1111,
+    OriginCityName: Halifax,
+    DestinationCityName: Edmundston,
+    StartUtc: 2027-08-12T03:32:00.0000000Z,
+    EndUtc: 2027-09-02T22:04:00.0000000Z,
+    TotalTripHours: 522.5333333333333
+  }
+]

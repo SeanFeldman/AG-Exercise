@@ -2,17 +2,17 @@ namespace Railcar.Data.Entities;
 
 public sealed class Trip
 {
-    public long Id { get; set; }
+    public long Id { get; init; }
 
-    public required string EquipmentId { get; set; }
+    public required string EquipmentId { get; init; }
 
-    public int OriginCityId { get; set; }
-    public City? OriginCity { get; set; }
+    public int OriginCityId { get; init; }
+    public City? OriginCity { get; init; }
 
     public int DestinationCityId { get; set; }
-    public City? DestinationCity { get; set; }
+    public City? DestinationCity { get; init; }
 
-    public DateTime StartUtc { get; set; }
+    public DateTime StartUtc { get; init; }
     public DateTime EndUtc { get; set; }
 
     public double TotalTripHours { get; set; }
